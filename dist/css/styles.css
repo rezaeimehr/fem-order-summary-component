@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%;
+  height: 100%; }
+
+body {
+  font-family: 'Space Mono', monospace;
+  background: url("../../images/pattern-background-mobile.svg") #e0e8ff no-repeat;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 71px;
+  font-family: 'Red Hat Display', sans-serif; }
+
+.order-summary {
+  width: 327px;
+  text-align: center;
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0px 40px 50px -10px rgba(91, 117, 203, 0.3); }
+  .order-summary__img {
+    width: 100%;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px; }
+  .order-summary__body {
+    color: #7280a7;
+    padding: 27px 24px 17px 24px; }
+    .order-summary__body p {
+      padding: 0 12px;
+      font-size: 15px;
+      line-height: 25px;
+      color: #7280a7; }
+  .order-summary__title {
+    color: #1f2f56;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 1rem; }
+  .order-summary__plan {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0 23px;
+    background: #f5f7ff;
+    border-radius: 12px;
+    padding: 16px 16px; }
+    .order-summary__plan a {
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 51px; }
+    .order-summary__plan a:hover {
+      color: #7280a7; }
+  .order-summary__annual-plan {
+    text-align: left;
+    padding-left: 20px;
+    line-height: 22px; }
+    .order-summary__annual-plan span:first-child {
+      font-weight: 800;
+      font-size: 14px;
+      color: #1f2f56; }
+    .order-summary__annual-plan span:last-child {
+      font-weight: normal;
+      font-size: 14px; }
+  .order-summary__music-icn {
+    width: 48px; }
+  .order-summary__btn {
+    border: 0;
+    background: transparent;
+    font-family: inherit;
+    height: 50px;
+    font-size: 15px;
+    cursor: pointer; }
+  .order-summary__btn-payment {
+    background: #3829e0;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 11px;
+    font-weight: 600;
+    color: white;
+    line-height: 17px;
+    box-shadow: 0px 11px 23px -11px #3829e0; }
+  .order-summary__btn-payment:hover {
+    opacity: 70%; }
+  .order-summary__btn-cancel {
+    margin-top: 8px;
+    font-weight: 800;
+    color: #7280a7; }
+  .order-summary__btn-cancel:hover {
+    color: #1f2f56; }
+
+@media screen and (min-width: 376px) {
+  body {
+    background: url("../../images/pattern-background-desktop.svg") #e0e8ff no-repeat;
+    margin-top: 101px;
+    background-size: contain; }
+  .order-summary {
+    width: 450px; }
+    .order-summary__body {
+      padding: 41px 48px 34px 48px; }
+      .order-summary__body p {
+        font-size: 16px;
+        line-height: 26px; }
+    .order-summary__title {
+      font-size: 28px; }
+    .order-summary__plan {
+      padding: 22px 24px;
+      margin: 1.3rem 0 33px; }
+      .order-summary__plan a {
+        font-size: 14px; }
+    .order-summary__annual-plan {
+      width: 100%;
+      line-height: 26px; }
+      .order-summary__annual-plan span:first-child {
+        display: block;
+        font-size: 16px; }
+      .order-summary__annual-plan span:last-child {
+        font-size: 16px; }
+    .order-summary__btn-cancel {
+      margin-top: 16px; } }
